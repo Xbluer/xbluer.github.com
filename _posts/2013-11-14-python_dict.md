@@ -67,13 +67,6 @@ d.update(x)
 {k1: v1, k2: v2, __k3: v32__} 
 </code>
 
-```Python
-d = {k1: v1, k3: v31}
-x = {k2: v2, k3: v32}
-d.update(x)
-\>>>print d
-{k1: v1, k2: v2, __k3: v32__}
-```
 12. **values**，返回dict中所有value值的list，可以重复  
 **itervalues**，返回迭代器
 
