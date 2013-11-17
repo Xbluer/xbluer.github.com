@@ -2,7 +2,7 @@
 layout: post
 category : note
 tagline: ""
-tags : [python note]
+tags : [python, note]
 ---
 {% include JB/setup %}
 
@@ -15,18 +15,19 @@ _虽然两种方式可以混合使用，但是尽量避免_
 
 参数收集，可以利用元组和字典收集不定数量的参数，关键词：`*`，`**`  
 在函数形参前添加`*`可以收集多余的位置参数，`**`则可以收集关键字参数
-```python
+
+{% highlight py %}
 def print_params(x, y, z=3, *pospar, **keypar):
     print x, y, z
     print pospar
     print keypar
-```
-```python
->>>print_params(1, 2, 3, 4, 5, 6, 7, foo = 3, bar = 4)
+
+print_params(1, 2, 3, 4, 5, 6, 7, foo = 3, bar = 4)
 1, 2, 3
 (4, 5, 6, 7)
 {'foo' = 3, 'bar' = 4}
-```
+{% endhighlight py %}
+
 在语句中也可以使用`*`和`**`，但是作用反转。
 
 ### 作用域
