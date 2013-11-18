@@ -1,6 +1,7 @@
 ---
 layout: post
 category : lessons
+title: ""
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
 ---
