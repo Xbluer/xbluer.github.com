@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Python dict 学习笔记"
-tags: [Python, note]
+tagline: ""
+category : note
+tags: [Python]
 ---
 
 #### 定义方法:

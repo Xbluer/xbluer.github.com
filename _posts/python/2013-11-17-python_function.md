@@ -2,16 +2,17 @@
 layout: post
 category : note
 title: "Python function 学习笔记(1)"
-tagline: ""
-tags : [python, note]
+tagline: "未完待续"
+tags : [Python]
 ---
 {% include JB/setup %}
 
 ### 参数
-
 Python的传递参数分为两种：
+
 1. __位置参数__，和其他语言类似，实参与形参位置一一对应，如果有默认实参则放在最后
 2. __关键字参数__，实参直接以赋值的方式传递给形参，位置不用一一对应。
+
 _虽然两种方式可以混合使用，但是尽量避免_
 
 参数收集，可以利用元组和字典收集不定数量的参数，关键词：`*`，`**`  
