@@ -8,8 +8,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Xbluer blog
-tagline: Site Tagline
+title : "Xbluer blog"
+tagline: ""
 author :
   name : Xbluer
   email : xusi1122@gmail.com
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://xbluer.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -40,7 +40,7 @@ JB :
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
-  # GitHub Pages (http://username.github.io)
+  # GitHub Pages (http://xbluer.github.io)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
