@@ -3,7 +3,7 @@ layout: post
 category : lessons
 tagline: "SQL about table"
 tags : [MySQL, database]
-publiced: false
+published:true
 ---
 {% include JB/setup %}
 
