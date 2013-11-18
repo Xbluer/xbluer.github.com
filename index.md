@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "文章列表"
+title: "Xbluer's Blog"
 ---
 {% include JB/setup %}
 
