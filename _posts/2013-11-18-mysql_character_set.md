@@ -1,8 +1,10 @@
 ---
 layout: post
-category : lessons
+category : note
+title: "MySQL 中字符集设置"
 tagline: "SQL about table"
 tags : [MySQL, database]
+published: false
 ---
 {% include JB/setup %}
 

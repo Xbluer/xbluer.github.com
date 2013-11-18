@@ -1,8 +1,9 @@
 ---
 layout: post
-category : lessons
-tagline: "学习笔记"
-tags : [MySQL]
+category : note
+title: "MySQL 中的数据类型"
+tagline: ""
+tags : [MySQL, database]
 ---
 {% include JB/setup %}
 

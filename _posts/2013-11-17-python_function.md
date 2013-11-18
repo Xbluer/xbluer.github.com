@@ -1,6 +1,7 @@
 ---
 layout: post
 category : note
+title: "Python function 学习笔记(1)"
 tagline: ""
 tags : [python, note]
 ---
