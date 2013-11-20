@@ -4,6 +4,7 @@ category : note
 title: MySQL TABLE 操作
 tagline: ""
 tags : [MySQL, database]
+data : 2013-11-17
 published : true
 ---
 {% include JB/setup %}
@@ -32,6 +33,11 @@ __最后一行不要加逗号！！！__
 
 __外键的定义：__
 如果表A中有属性字段X,且依赖表B的主键。那么称表B为父表，A为子表，X为A的外键。显然A中X字段的数据类型要与B中对应的主键相同。A中的任一条记录字段X的值要么是表B中已存在的主属性，要么是NULL。
+
+```
+CONSTRAINT 外键名 FOREIGN KEY (属性名1.1,属性名1.2,...,属性名1.n)
+    REFERENCES 表名(属性名2.1,属性名2.2,...,属性名2.n)
+```
 
 ##### 查看表的结构：
 1. `DESCRIBE 表名`：查看基本定义。可以简写为`DESC 表名`
