@@ -4,6 +4,7 @@ category : note
 title: "MySQL 索引"
 tagline: ""
 tags : [MySQL, database]
+
 published: true
 ---
 {% include JB/setup %}
@@ -38,3 +39,6 @@ MySQL中所有存储引擎对每张表至少支持16个索引，索引长度至�
 5. 尽量使用数据量少的索引。
 6. 尽量使用前缀索引。一般在TEXT和BLOG类型的字段上使用。
 7. 删除很少使用或不再使用的索引。
+
+##### 创建索引：
+1. 创建表的时候创建。
