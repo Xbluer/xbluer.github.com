@@ -3,7 +3,7 @@ layout: post
 category : note
 title: "C语言内存分配"
 tagline: ""
-tags : [c/c++, Linux]
+tags : [C/C++, Linux]
 published: true
 ---
 {% include JB/setup %}
