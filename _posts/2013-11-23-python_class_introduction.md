@@ -1,7 +1,7 @@
 ---
 layout: post
 category : note
-title: "Python 类入门"
+title: "Python class 入门"
 tagline: ""
 tags : [Python]
 published: true
@@ -16,3 +16,57 @@ published: true
     - 属性通常是在class语句中通过赋值语句添加到类中，而不是嵌入在函数的def语句中。
     - 属性通常是在类内，对传给函数的特许参数(self)，做赋值运算而添加在实例中
 6. 构造函数：`init(self,...)`
+
+#### 类对象提供默认行为
+- class语句创建类对象并将其赋值给变量名。
+- class语句内的赋值语句会创建类的属性。
+- 类属性提供对象的状态和行为。
+
+#### 实例对象时具体的元素
+- 像函数一样调用类对象会创建新的实例对象
+- 每个实例对象继承类的属性并获得自己的命名空间。
+- 在方法内对self属性做赋值运算会产生每个实例自己的属性。
+- 可以在类方法函数外对实例的变量名进行赋值运算，甚至可以在实例命名空间范围内产生全新的属性。
+
+#### Python属性继承机制
+- 超类列在了类开头的括号中
+- 类从其超类中继承属性
+- 实例会继承所有可读取类的属性。寻找变量名时，Python会检查实例，然后是它的类，最后是所有超类。
+- 每个object.attribute都会开启新的独立搜索。
+- 逻辑的修改是通过创建子类，而不是修改超类。
+
+#### 类是模块内的属性
+
+#### 类可以重载运算符
+- 以双下划线命名的方法有特许意义。Python运算符重载的实现是提供特许命名方法来拦截运算。每种运算符和特殊命名方法之间有固定的映射关系。
+- 运算符覆盖方法没有默认值，且没有必要。
+
+-------------------------------------------------------
+
+可以在类外定义类的方法
+
+```
+def upperName(self):
+    return self.name.upper()
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+p = Person('Tom')
+print upperName(p)
+
+# add upperName to class
+Person.upperName = upperName
+
+q = Person('cat')
+print q.upperName()
+```
+
+运行结果
+
+```
+TOM
+CAT
+```
+
