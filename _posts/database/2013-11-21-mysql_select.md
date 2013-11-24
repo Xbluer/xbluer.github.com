@@ -159,3 +159,58 @@ SELECT * FROM employee
             WHERE d_id = 1003);
 ' 如果部门中有d_id取值为1003的记录，则查询employee表中age大于24的记录
 ```
+
+##### 带有ANY关键字的子查询
+ANY关键字表示满足其中任何一个条件。使用ANY关键字，只要满足内层查询语句返回的结果中任何一个，就可以通过该条件来执行外层查询语句。
+
+从student表中查询出所有得奖学金的学生。
+
+```
+SELECT * FROM student
+    WHERE score >= ANY
+        (SELECT score FROM scholarship)
+```
+
+##### ALL  
+使用ALL关键字时，只有满足内层查询语句返回的所有结果，才可以执行外层查询语句。
+
+-----------------------------------
+#### 合并查询结果
+合并查询结果是将多个SELECT语句的查询结果合并到一起。
+
+使用UNION关键字，数据库系统会将所有的查询结果合并到一起，然后去除掉相同的记录。
+
+而UNION ALL关键字则只是简单的合并到一起。
+
+```
+SELECT 语句1
+    UNION | UNION ALL
+SELECT 语句2
+    UNION | UNION ALL
+SELECT 语句3
+    UNION | UNION ALL
+```
+
+#### 为表和字段取别名
+
+__为表取别名__
+选取部门号为1001的部门。
+
+```
+SELECT * FROM department d
+    WHERE d.d_id = 1001;
+```
+
+__为字段取别名__
+字段别名是用来显示的，代替原来表中定义的字段名。
+关键字：AS，`属性名 [AS] 别名`
+
+-------------------
+#### 正则表达式
+关键字：REGEXP，`属性名 REGEXP '匹配方式'`
+
+```
+' 从info表中name字段中查询以L开头的记录
+SELECT * FROM info
+    WHERE name REGEXP '^L';
+```
